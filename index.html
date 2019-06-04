@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <h1 class="text-success">ВСЕ ТОВАРЫ ПО 3000 РУБЛЕЙ! УСПЕВАЙ! ПОКУПАЙ!</h1>
+    <div class="summa" style="font-size: 40px;"><h1>Итог:</h1></div>
+    <div class="col-12 d-flex">
+      <div class="col-3">
+        <img src="img1.jpg" class="w-75 mt-5">
+        <h3>3000</h3>
+        <button class="bg-success btn-lg btnS">Купить</button>
+      </div>
+      <div class="col-3">
+        <img src="img2.jpg" class="w-100 mt-5">
+        <h3>3000</h3>
+        <button class="bg-success btn-lg btnJ">Купить</button>
+      </div>
+      <div class="col-3">
+        <img src="img3.jpg" class="w-100 mt-5">
+        <h3>3000</h3>
+        <button class="bg-success btn-lg btnJa">Купить</button>
+      </div>
+      <div class="col-3">
+        <img src="img4.jpg" class="w-100 mt-5">
+        <h3>3000</h3>
+        <button class="bg-success btn-lg btnE">Купить</button>
+      </div>
+    </div>
+    <script>
+      let summa = 0;
+      let x = function(){
+        summa = summa + 3000;
+		    document.querySelector(".summa").innerHTML= summa + " рублей";
+      }
+      document.querySelector(".btnS").onclick = x
+      document.querySelector(".btnJ").onclick = x
+      document.querySelector(".btnJa").onclick = x
+      document.querySelector(".btnE").onclick = x
+    </script>
+  </body>
+</html>
